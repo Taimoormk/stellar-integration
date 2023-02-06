@@ -4,6 +4,7 @@ import { middleware } from './middleware';
 const port = process.env.PORT || 9000;
 const app = express();
 
+// Middleware
 middleware(app);
 
 app.listen(port, () : void => {
