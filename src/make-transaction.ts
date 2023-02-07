@@ -12,7 +12,7 @@ const transaction = async () : Promise<void> => {
   };
   
   const txOptions = {
-    fees: await server.fetchBaseFee(),
+    fee: await server.fetchBaseFee(),
     networkPassphrase: Stellar.Networks.TESTNET,
   };
 
